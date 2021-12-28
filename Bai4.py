@@ -2,8 +2,7 @@
 
 class Solution:
     def distributeCandies(self, a: List[int]) -> int:
-        if (len(set(a)) > len(a)/2): return int(len(a)/2)
-        else: return int(len(set(a)))
+        return int(min(len(set(a)),len(a)/2))
 
 
 # class Solution:
